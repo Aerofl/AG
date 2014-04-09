@@ -7,43 +7,57 @@ html, body
     width: 100%;
 }
 
-#wrap {
+/*#wrap {
     padding-right:200px;
     text-align:center; 
-}
+}*/
 
 .vid1 {
   background: #fff600;
   display: inline-block;
   height: 300px;
   position: relative;
-  transform: skewX(-25deg);
   width: 30px;
+  transform: skewX(-25deg);
   -webkit-transform:    skewX(-25deg);
+  transition: all 0.3 ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3 ease-out;
   -o-transition: all 0.3 ease-out;
 }
 
-.vid1:hover {
+.corptext {
+    bottom: -25px;
+    display: block;
+    font-size: 10px;
+    left: 50%;
+    margin-left: -43px;
+    opacity: 0;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 86px;
+    transition: opacity 0.3 ease-out;
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3 ease-out;
+    -o-transition: opacity 0.3 ease-out;
+}
+
+.vid1:hover,
+.vid2:hover,
+.vid3:hover {
   width: 150px;
+  transition: all 0.3 ease-in;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
 }
 
-#corptext {
-  display: flex;
-  font-size: 10px;
-  margin-top: 320px;
-  padding: 5px;
-  text-transform: uppercase;
-  visibility: hidden;
-}
-
-.vid1:hover #corptext {
-  display: block;
-  visibility: visible;
+.vid1:hover .corptext,
+.vid2:hover .corptext,
+.vid3:hover .corptext {
+  opacity: 1;
 }
 
 .vid2 {
@@ -55,21 +69,10 @@ html, body
   transform: skewX(-25deg);
   width: 30px;
   -webkit-transform:    skewX(-25deg);
+  transition: all 0.3 ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3 ease-out;
   -o-transition: all 0.3 ease-out;
-}
-
-.vid2:hover {
-  width: 150px;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-}
-
-.vid2:hover #corptext {
-  display: block;
-  visibility: visible;
 }
 
 .vid3 {
@@ -80,22 +83,11 @@ html, body
   position: relative;
   transform: skewX(-25deg);
   width: 30px;
-  -webkit-transform:    skewX(-25deg);  
+  -webkit-transform:    skewX(-25deg); 
+  transition: all 0.3 ease-out; 
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3 ease-out;
   -o-transition: all 0.3 ease-out;
-}
-
-.vid3:hover {
-  width: 150px;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-}
-
-.vid3:hover #corptext {
-  display: block;
-  visibility: visible;
 }
 
 .footer-text {
