@@ -8,16 +8,14 @@ html, body
 }
 
 #wrap {
-	margin: 0 auto;
-  text-align: justify;
-  width: 900px;
+    padding-right:200px;
+    text-align:center; 
 }
 
 .vid1 {
   background: #fff600;
   display: inline-block;
   height: 300px;
-  margin-left: 385px;
   position: relative;
   transform: skewX(-25deg);
   width: 30px;
@@ -34,21 +32,25 @@ html, body
   -o-transition: all 0.3s ease-in;
 }
 
-#wrap:hover p {
-  opacity: 1;
+#corptext {
+  display: flex;
+  font-size: 10px;
+  margin-top: 320px;
+  padding: 5px;
+  text-transform: uppercase;
+  visibility: hidden;
 }
 
-#wrap p {
+.vid1:hover #corptext {
   display: block;
-  opacity: 0;
-  margin: 0 auto;
+  visibility: visible;
 }
 
 .vid2 {
   background: #fff600;
   display: inline-block;
   height: 300px;
-  margin-left: 100px;
+  left: 100px;
   position: relative;
   transform: skewX(-25deg);
   width: 30px;
@@ -65,11 +67,16 @@ html, body
   -o-transition: all 0.3s ease-in;
 }
 
+.vid2:hover #corptext {
+  display: block;
+  visibility: visible;
+}
+
 .vid3 {
   background: #fff600;
   display: inline-block;
   height: 300px;
-  margin-left: 100px;
+  left: 200px;
   position: relative;
   transform: skewX(-25deg);
   width: 30px;
@@ -84,6 +91,11 @@ html, body
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
+}
+
+.vid3:hover #corptext {
+  display: block;
+  visibility: visible;
 }
 
 .footer-text {
