@@ -7,11 +7,6 @@ html, body
     width: 100%;
 }
 
-/*#wrap {
-    padding-right:200px;
-    text-align:center; 
-}*/
-
 .vid1 {
   background: #fff600;
   display: inline-block;
@@ -26,7 +21,73 @@ html, body
   -o-transition: all 0.3 ease-out;
 }
 
-.corptext {
+.vid2 {
+  background: #fff600;
+  display: inline-block;
+  height: 300px;
+  left: 100px;
+  position: relative;
+  width: 30px;
+  transform: skewX(-25deg);
+  -webkit-transform:    skewX(-25deg);
+  transition: all 0.3 ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3 ease-out;
+  -o-transition: all 0.3 ease-out;
+}
+
+.vid3 {
+  background: #fff600;
+  display: inline-block;
+  height: 300px;
+  left: 200px;
+  position: relative;
+  width: 30px;
+  transform: skewX(-25deg);
+  -webkit-transform:    skewX(-25deg); 
+  transition: all 0.3 ease-out; 
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3 ease-out;
+  -o-transition: all 0.3 ease-out;
+}
+
+/*.vid1:hover {
+  background-image: url(images/correel.gif);
+}
+
+.vid2:hover {
+  background-image: url(images/comreel.gif);
+}
+
+.vid3:hover {
+  background-image: url(images/narreel.gif);
+}*/
+
+.vid1:hover,
+.vid2:hover,
+.vid3:hover {
+  opacity: 0.7;  
+  width: 130px;
+  transition: all 0.2 ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+
+.vid1:active,
+.vid2:active,
+.vid3:active {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    background-color: #000;
+  transform: skewX(0deg);
+  -webkit-transform: skewX(0deg);
+}
+
+.reeltext {
     bottom: -25px;
     display: block;
     font-size: 10px;
@@ -44,50 +105,32 @@ html, body
     -o-transition: opacity 0.3 ease-out;
 }
 
-.vid1:hover,
-.vid2:hover,
-.vid3:hover {
-  width: 150px;
-  transition: all 0.3 ease-in;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
+.reelgif {
+    display: block;
+    left: -68px;
+    bottom: -4px;
+    opacity: 0;
+    padding: 5px;
+    position: absolute;
+    width: 86px;
+    transform: skewX(22deg);
+    -webkit-transform: skewX(22deg);
+    transition: all 0.2 ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2 ease-out;
+    -o-transition: all 0.2 ease-out;
 }
 
-.vid1:hover .corptext,
-.vid2:hover .corptext,
-.vid3:hover .corptext {
+.vid1:hover .reeltext,
+.vid2:hover .reeltext,
+.vid3:hover .reeltext {
   opacity: 1;
 }
 
-.vid2 {
-  background: #fff600;
-  display: inline-block;
-  height: 300px;
-  left: 100px;
-  position: relative;
-  transform: skewX(-25deg);
-  width: 30px;
-  -webkit-transform:    skewX(-25deg);
-  transition: all 0.3 ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3 ease-out;
-  -o-transition: all 0.3 ease-out;
-}
-
-.vid3 {
-  background: #fff600;
-  display: inline-block;
-  height: 300px;
-  left: 200px;
-  position: relative;
-  transform: skewX(-25deg);
-  width: 30px;
-  -webkit-transform:    skewX(-25deg); 
-  transition: all 0.3 ease-out; 
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3 ease-out;
-  -o-transition: all 0.3 ease-out;
+.vid1:hover .reelgif,
+.vid2:hover .reelgif,
+.vid3:hover .reelgif {
+  opacity: 1;
 }
 
 .footer-text {
