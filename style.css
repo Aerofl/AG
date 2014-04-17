@@ -1,10 +1,10 @@
 html, body
 {
-    background-color: #000;
-    color: #fff;
-    height: 100%;
-    padding: 100px 0 100px 0;
-    width: 100%;
+  background-color: #000;
+  color: #fff;
+  height: 100%;
+  padding: 100px 0 100px 0;
+  width: 100%;
 }
 
 .vid1 {
@@ -67,7 +67,7 @@ html, body
 .vid2:hover,
 .vid3:hover {
   opacity: 0.7;  
-  width: 130px;
+  width: 127px;
   transition: all 0.2 ease-in;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -77,22 +77,27 @@ html, body
 .vid1:active,
 .vid2:active,
 .vid3:active {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    margin: auto;
-    width: 90%;
-    height: 90%;
-    background-color: #000;
+  background-color: #000;
+  height: 90%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 90%;
+  transition: all 0.3 ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3 ease-out;
+  -o-transition: all 0.3 ease-out;
   transform: skewX(0deg);
   -webkit-transform: skewX(0deg);
 }
 
 .reeltext {
-    bottom: -25px;
+    bottom: -35px;
     display: block;
-    font-size: 10px;
+    font-size: 12px;
+    font-style: normal;
     left: 50%;
-    margin-left: -43px;
+    margin-left: -85px;
     opacity: 0;
     padding: 5px;
     position: absolute;
@@ -106,19 +111,19 @@ html, body
 }
 
 .reelgif {
-    display: block;
-    left: -68px;
-    bottom: -4px;
-    opacity: 0;
-    padding: 5px;
-    position: absolute;
-    width: 86px;
-    transform: skewX(22deg);
-    -webkit-transform: skewX(22deg);
-    transition: all 0.2 ease-out;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2 ease-out;
-    -o-transition: all 0.2 ease-out;
+  display: block;
+  left: -68px;
+  bottom: -4px;
+  opacity: 0;
+  padding: 5px;
+  position: absolute;
+  width: 86px;
+  transform: skewX(22deg);
+  -webkit-transform: skewX(22deg);
+  transition: opacity 0.2 ease-out;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2 ease-out;
+  -o-transition: opacity 0.2 ease-out;
 }
 
 .vid1:hover .reeltext,
@@ -127,10 +132,22 @@ html, body
   opacity: 1;
 }
 
+.vid1:active .reeltext,
+.vid2:active .reeltext,
+.vid3:active .reeltext {
+  opacity: 0;
+}
+
 .vid1:hover .reelgif,
 .vid2:hover .reelgif,
 .vid3:hover .reelgif {
   opacity: 1;
+}
+
+.vid1:active .reelgif,
+.vid2:active .reelgif,
+.vid3:active .reelgif {
+  opacity: 0;
 }
 
 .footer-text {
