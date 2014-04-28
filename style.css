@@ -66,7 +66,7 @@ html, body
 .vid1:hover,
 .vid2:hover,
 .vid3:hover {
-  width: 127px;
+  width: 126px;
   transition: all 0.2 ease-in;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -111,7 +111,7 @@ html, body
 
 .reelgif {
   display: block;
-  left: -68px;
+  left: -66px;
   bottom: -4px;
   opacity: 0;
   padding: 5px;
@@ -142,7 +142,7 @@ html, body
 .vid3:hover .reelgif {
   opacity: 0.6;
   transition: all 0.6 ease-in;
-  -webkit-transition: all 0.6s ease-in;
+  -webkit-transition: all 0.7s ease-in;
   -moz-transition: all 0.6s ease-in;
   -o-transition: all 0.6s ease-in;
 }
