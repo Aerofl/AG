@@ -7,6 +7,10 @@ html, body
   width: 100%;
 }
 
+input{
+  display:none
+}
+
 .vid1 {
   background: #fff600;
   display: inline-block;
@@ -51,18 +55,6 @@ html, body
   -o-transition: all 0.3 ease-out;
 }
 
-/*.vid1:hover {
-  background-image: url(images/correel.gif);
-}
-
-.vid2:hover {
-  background-image: url(images/comreel.gif);
-}
-
-.vid3:hover {
-  background-image: url(images/narreel.gif);
-}*/
-
 .vid1:hover,
 .vid2:hover,
 .vid3:hover {
@@ -73,9 +65,8 @@ html, body
   -o-transition: all 0.2s ease-in;
 }
 
-.vid1:active,
-.vid2:active,
-.vid3:active {
+input:checked + 
+  .vid1 {
   background-color: #000;
   height: 90%;
   margin: auto;
@@ -88,6 +79,10 @@ html, body
   -o-transition: all 0.3 ease-out;
   transform: skewX(0deg);
   -webkit-transform: skewX(0deg);
+}
+
+input:checked + .reeltext, .reelgif {
+  opacity: 0;
 }
 
 .reeltext {
@@ -150,7 +145,7 @@ html, body
 .vid1:active .reelgif,
 .vid2:active .reelgif,
 .vid3:active .reelgif {
-  opacity: 0;
+  visibility: hidden;
 }
 
 .footer-text {
