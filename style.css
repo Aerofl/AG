@@ -11,6 +11,10 @@ input{
   display:none
 }
 
+.video-js {
+  display: none;
+}
+
 .vid1 {
   background: #fff600;
   display: inline-block;
@@ -19,10 +23,23 @@ input{
   width: 30px;
   transform: skewX(-25deg);
   -webkit-transform:    skewX(-25deg);
+
   transition: all 0.3 ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3 ease-out;
   -o-transition: all 0.3 ease-out;
+}
+
+.vid1.open-vid {
+  width: 700px;
+}
+
+.open-vid .reeltext, .open-vid .reelgif {
+  display: none;
+}
+
+.open-vid .video-js {
+  display: block;
 }
 
 .vid2 {
@@ -109,7 +126,7 @@ input:checked + .reeltext, .reelgif {
   left: -66px;
   bottom: -4px;
   opacity: 0;
-  padding: 5px;
+  padding: 5px 5px 0 5px;
   position: absolute;
   width: 86px;
   transform: skewX(22deg);
