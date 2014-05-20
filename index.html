@@ -11,7 +11,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AG</title>
 <!-- Style CSS -->
-<link href="style.css" media="screen" rel="stylesheet">
+<link href="css/style.css" media="screen" rel="stylesheet">
 <link href="//vjs.zencdn.net/4.5/video-js.css" rel="stylesheet">
 <script src="//vjs.zencdn.net/4.5/video.js"></script>
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
@@ -22,23 +22,32 @@
     <input type="checkbox" id="div">
     <div class="vid1">
     	<span class="reeltext"><img src="images/cprtxt.jpg"></span>
-    	<label class="reelgif" for="div"><img src="images/correelf.gif"></label>
-        <video id="example_video_1" class="video-js vjs-default-skin"
+    	<label class="reelgif" for="div"><img src="images/correel.gif"></label>
+        <video id="corporate" class="video-js vjs-default-skin"
           controls preload="auto" width="1200" height="495"
-          data-setup='{"example_option":true}'
-          style="-webkit-transform: skewX(22deg);">
-         <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-         <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
-         <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+          data-setup='{"example_option":true}'>
+         <source src="videos/correelvid.mp4" type='video/mp4' />
         </video>
    	</div>
     <div class="vid2">
     	<span class="reeltext"><img src="images/cmrtxt.jpg"></span>
-    	<span class="reelgif"><img src="images/comreelf.gif"></span>
+    	<span class="reelgif"><img src="images/comreel.gif"></span>
+        <video id="commercial" class="video-js vjs-default-skin"
+          controls preload="auto" width="1200" height="495"
+          data-setup='{"example_option":true}'
+          style="-webkit-transform: skewX(22deg);">
+         <source src="videos/correelvid.mp4" type='video/mp4' />
+        </video>
     </div>
     <div class="vid3">
     	<span class="reeltext"><img src="images/nrtxt.jpg"></span>
-    	<span class="reelgif"><img src="images/narreelf.gif"></span>
+    	<label class="reelgif" for="div"><img src="images/narreel.gif"></label>
+        <video id="narrative" class="video-js vjs-default-skin"
+          controls preload="auto" width="1200" height="495"
+          data-setup='{"example_option":true}'
+          style="-webkit-transform: skewX(22deg);">
+         <source src="videos/correelvid.mp4" type='video/mp4' />
+        </video>
     </div>
 </div>
 
