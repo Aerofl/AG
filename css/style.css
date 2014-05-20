@@ -7,8 +7,8 @@ html, body
   width: 100%;
 }
 
-input{
-  display:none
+input {
+  display:none;
 }
 
 .video-js {
@@ -23,15 +23,103 @@ input{
   width: 30px;
   transform: skewX(-25deg);
   -webkit-transform:    skewX(-25deg);
-
   transition: all 0.3 ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3 ease-out;
   -o-transition: all 0.3 ease-out;
 }
 
-.vid1.open-vid {
-  width: 700px;
+.animate {
+  animation: animationFrames linear .5s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  -webkit-animation: animationFrames linear .5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -moz-animation: animationFrames linear .5s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -o-animation: animationFrames linear .5s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -ms-animation: animationFrames linear .5s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+}
+
+@keyframes animationFrames{
+  0% {
+    left:-25px;
+    top:-25px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(0.59) scaleY(5) skewX(-25deg) ;
+  }
+  100% {
+    left:-747px;
+    top:-228px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(20) scaleY(10) skewX(-25deg) ;
+  }
+}
+
+@-moz-keyframes animationFrames{
+  0% {
+    left:-25px;
+    top:-25px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(0.59) scaleY(5) skewX(-25deg) ;
+  }
+  100% {
+    left:-747px;
+    top:-228px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(20) scaleY(10) skewX(-25deg) ;
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    left:-25px;
+    top:-25px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(0.59) scaleY(5) skewX(-25deg) ;
+  }
+  100% {
+    left:-747px;
+    top:-228px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(20) scaleY(10) skewX(-25deg) ;
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    left:-25px;
+    top:-25px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(0.59) scaleY(5) skewX(-25deg) ;
+  }
+  100% {
+    left:-747px;
+    top:-228px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(20) scaleY(10) skewX(-25deg) ;
+  }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+    left:-25px;
+    top:-25px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(0.59) scaleY(5) skewX(-25deg) ;
+  }
+  100% {
+    left:-747px;
+    top:-228px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(20) scaleY(10) skewX(-25deg) ;
+  }
 }
 
 .open-vid .reeltext, .open-vid .reelgif {
@@ -82,20 +170,20 @@ input{
   -o-transition: all 0.2s ease-in;
 }
 
-input:checked + 
-  .vid1 {
+input:checked + .vid1 {
   background-color: #000;
-  height: 90%;
+  height: 75%;
   margin: auto;
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   width: 90%;
   transition: all 0.3 ease-out;
-  -webkit-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3 ease-out;
   -o-transition: all 0.3 ease-out;
   transform: skewX(0deg);
   -webkit-transform: skewX(0deg);
+
 }
 
 input:checked + .reeltext, .reelgif {
@@ -163,6 +251,20 @@ input:checked + .reeltext, .reelgif {
 .vid2:active .reelgif,
 .vid3:active .reelgif {
   visibility: hidden;
+}
+
+.commercial {
+  -webkit-transform: skewX(25deg);
+  background-color: #000;
+  height: 75%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 90%;
+  transition: all 0.3 ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3 ease-out;
+  -o-transition: all 0.3 ease-out;
 }
 
 .footer-text {
