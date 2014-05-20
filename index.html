@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="author" content="AG">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AG</title>
+<!-- Style CSS -->
+<link href="css/style.css" media="screen" rel="stylesheet">
+<link href="//vjs.zencdn.net/4.5/video-js.css" rel="stylesheet">
+<script src="//vjs.zencdn.net/4.5/video.js"></script>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="js/onClick.js"></script>
+</head>
+<body>
+<div style="text-align:center; padding-right:200px;">
+    <input type="checkbox" id="div">
+    <div class="vid1">
+    	<span class="reeltext"><img src="images/cprtxt.jpg"></span>
+    	<label class="reelgif" for="div"><img src="images/correel.gif"></label>
+        <video id="corporate" class="video-js vjs-default-skin"
+          controls preload="auto" width="1200" height="495"
+          data-setup='{"example_option":true}'>
+         <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+        </video>
+   	</div>
+    <div class="vid2">
+    	<span class="reeltext"><img src="images/cmrtxt.jpg"></span>
+    	<span class="reelgif"><img src="images/comreel.gif"></span>
+        <video id="commercial" class="video-js vjs-default-skin"
+          controls preload="auto" width="1200" height="495"
+          data-setup='{"example_option":true}'
+          style="-webkit-transform: skewX(22deg);">
+         <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+        </video>
+    </div>
+    <div class="vid3">
+    	<span class="reeltext"><img src="images/nrtxt.jpg"></span>
+    	<label class="reelgif" for="div"><img src="images/narreel.gif"></label>
+        <video id="narrative" class="video-js vjs-default-skin"
+          controls preload="auto" width="1200" height="495"
+          data-setup='{"example_option":true}'
+          style="-webkit-transform: skewX(22deg);">
+         <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+        </video>
+    </div>
+</div>
+
+<!-- <footer>
+<p> 
+	<a href="/portfolio"><div class="footer-text">PORTFOLIO</div></a>  
+	<a href="/about"><div class="footer-text">CLIENTS</div></a>  
+	<a href="/article"><div class="footer-text">CONTACT</div></a>
+<p> -->
+</body>
+<!-- </footer> -->
+</html>
