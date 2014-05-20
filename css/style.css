@@ -12,7 +12,23 @@ input{
 }
 
 .video-js {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-modal {
   display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.video-container {
+  position: absolute;
+  width: 100%;
+  top: 230px;
 }
 
 .vid1 {
@@ -82,8 +98,7 @@ input{
   -o-transition: all 0.2s ease-in;
 }
 
-input:checked + 
-  .vid1 {
+.vid-init.checked {
   background-color: #000;
   height: 90%;
   margin: auto;
