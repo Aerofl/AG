@@ -4,59 +4,48 @@
 <!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
-<head>
-<meta charset="utf-8">
-<meta name="author" content="AG">
-<meta name="keywords" content="">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AG</title>
-<!-- Style CSS -->
-<link href="css/style.css" media="screen" rel="stylesheet">
-<link href="//vjs.zencdn.net/4.5/video-js.css" rel="stylesheet">
-<script src="//vjs.zencdn.net/4.5/video.js"></script>
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script src="js/onClick.js"></script>
-</head>
-<body>
-<div style="text-align:center; padding-right:200px;">
-    <input type="checkbox" id="div">
-    <div class="vid1">
-    	<span class="reeltext"><img src="images/cprtxt.jpg"></span>
-    	<label class="reelgif" for="div"><img src="images/correel.gif"></label>
-        <video id="video1" class="video-js vjs-default-skin corporate"
-          controls preload="auto" width="1200" height="495"
-          data-setup='{"example_option":true}'>
-         <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-        </video>
-   	</div>
-   </input>
-    <div class="vid2">
-    	<span class="reeltext"><img src="images/cmrtxt.jpg"></span>
-    	<span class="reelgif"><img src="images/comreel.gif"></span>
-        <video id="video2" class="video-js vjs-default-skin commercial"
-          controls preload="auto" width="1200" height="495"
-          data-setup='{"example_option":true}'>
-         <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-        </video>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="AG">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AG</title>
+    <!-- Style CSS -->
+    <link href="css/style.css" media="screen" rel="stylesheet">
+    <!--
+    <link href="http://vjs.zencdn.net/4.5/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.5/video.js"></script>
+    -->
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="js/onClick.js"></script>
+  </head>
+  <body>
+    <div style="text-align:center; padding-right:200px;">
+        <div class="vid1 vid-init" data-src="http://video-js.zencoder.com/oceans-clip.mp4">
+          <span class="reeltext"><img src="images/cprtxt.jpg"></span>
+          <label class="reelgif" for="vid1"><img src="images/correel.gif"></label>
+          <input type="checkbox" id="vid1"/>
+        </div>
+        <div class="vid2 vid-init" data-src="http://video-js.zencoder.com/oceans-clip.mp4">
+          <span class="reeltext"><img src="images/cmrtxt.jpg"></span>
+          <label class="reelgif" for="vid2"><img src="images/comreel.gif"></label>
+          <input type="checkbox" id="vid2"/>
+        </div>
+        <div class="vid3 vid-init" data-src="http://video-js.zencoder.com/oceans-clip.mp4">
+          <span class="reeltext"><img src="images/nrtxt.jpg"></span>
+          <label class="reelgif" for="vid3"><img src="images/narreel.gif"></label>
+          <input type="checkbox" id="vid3"/>
+        </div>
     </div>
-    <div class="vid3">
-    	<span class="reeltext"><img src="images/nrtxt.jpg"></span>
-    	<label class="reelgif" for="div"><img src="images/narreel.gif"></label>
-        <video id="video3" class="video-js vjs-default-skin narrative"
-          controls preload="auto" width="1200" height="495"
-          data-setup='{"example_option":true}'
-          style="-webkit-transform: skewX(25deg);">
-         <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-        </video>
-    </div>
-</div>
+    <div class="video-modal"><div class="video-container"></div></div>
 
-<!-- <footer>
-<p> 
-	<a href="/portfolio"><div class="footer-text">PORTFOLIO</div></a>  
-	<a href="/about"><div class="footer-text">CLIENTS</div></a>  
-	<a href="/article"><div class="footer-text">CONTACT</div></a>
-<p> -->
-</body>
-<!-- </footer> -->
+    <!-- <footer>
+    <p> 
+      <a href="/portfolio"><div class="footer-text">PORTFOLIO</div></a>  
+      <a href="/about"><div class="footer-text">CLIENTS</div></a>  
+      <a href="/article"><div class="footer-text">CONTACT</div></a>
+    <p> -->
+  </body>
+  <!-- </footer> -->
 </html>
