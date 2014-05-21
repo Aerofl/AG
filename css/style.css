@@ -2,9 +2,7 @@ html, body
 {
   background-color: #000;
   color: #fff;
-  height: 100%;
-  padding: 100px 0 100px 0;
-  width: 100%;
+  padding: 100px 0 0 0;
 }
 
 input {
@@ -12,9 +10,7 @@ input {
 }
 
 .video-js {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: -250px;
 }
 
 .video-modal {
