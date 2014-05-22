@@ -2,7 +2,25 @@ html, body
 {
   background-color: #000;
   color: #fff;
-  padding: 100px 0 0 0;
+  height: 100%;
+}
+
+#main{padding: 300px 0 0 30px;}
+
+#wrapper { 
+  min-height: 100%; 
+  height: auto !important; 
+  margin-top: -90px; 
+}
+
+#bottom, #push { 
+  height:10px; text-align: center; margin-right: 550px;
+}
+
+#footer { 
+  height:30px; 
+  background:#000; 
+  color:#fff; 
 }
 
 input {
@@ -115,12 +133,10 @@ input:checked + .reeltext, .reelgif {
 .reeltext {
     bottom: -35px;
     display: block;
-    font-size: 12px;
-    font-style: normal;
     left: 50%;
     margin-left: -85px;
     opacity: 0;
-    padding: 5px;
+    padding: 5px 5px 5px 8px;
     position: absolute;
     width: 86px;
     transform: skewX(25deg);
@@ -175,12 +191,24 @@ input:checked + .reeltext, .reelgif {
   visibility: hidden;
 }
 
-.footer-text {
-    left: 0;
-    line-height: 200px;
-    margin-top: 150px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 100%;
+.portfolio {
+  display: inline-block;
+  height: 300px;
+  position: relative;
+  width: 30px;
+}
+
+.clients {
+  display: inline-block;
+  height: 300px;
+  left: 190px;
+  position: relative;
+  width: 30px;
+}
+.contact {
+  display: inline-block;
+  height: 300px;
+  left: 360px;
+  position: relative;
+  width: 30px;
 }

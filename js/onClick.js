@@ -12,7 +12,7 @@ $(document).ready(function(){
         dynheight = $(window).height();
 
     evt.preventDefault();
-
+    $this.fadeIn(2000);
     $this.addClass('checked');
 
     $source
@@ -43,6 +43,5 @@ $(document).ready(function(){
       $('input:checked').prop('checked', false);
       $(this).hide();
     }
-
   });
 });
