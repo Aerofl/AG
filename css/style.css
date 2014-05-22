@@ -212,3 +212,15 @@ input:checked + .reeltext, .reelgif {
   position: relative;
   width: 30px;
 }
+
+.close {
+  background-color:#000;
+  display:inline-block;
+  color:#ffffff;
+  height:33px;
+  line-height:33px;
+  width:53px;
+  text-decoration:none;
+  text-align:center;
+  text-shadow:1px 1px 0px #ffffff;
+}

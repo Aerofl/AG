@@ -8,8 +8,8 @@ $(document).ready(function(){
         $source = $(document.createElement('source')),
         videoSrc = $target.data('src'),
         $this = $(this),
-        dynwidth = $(window).width(),
-        dynheight = $(window).height();
+        dynwidth = $(window).width() + -100,
+        dynheight = $(window).height() + -100;
 
     evt.preventDefault();
     $this.fadeIn(2000);
@@ -30,8 +30,8 @@ $(document).ready(function(){
 
     $(".video-modal, .close").show();
     $('.video-container').append($video);
-    $('.reeltext, .reelgif').hide();
-    $('.close').show();
+    $('.reeltext, .reelgif, #footer').hide();
+    $('.back').show();
   });
   $('.video-modal').on('click', function (evt) {
     var $target = $(evt.target),
@@ -44,4 +44,6 @@ $(document).ready(function(){
       $(this).hide();
     }
   });
+  $('.close').hide();
+  $('.close').on('click').close('.vid-init');
 });
