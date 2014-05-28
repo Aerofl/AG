@@ -8,8 +8,8 @@ $(document).ready(function(){
         $source = $(document.createElement('source')),
         videoSrc = $target.data('src'),
         $this = $(this),
-        dynwidth = $(window).width() + -100,
-        dynheight = $(window).height() + -100;
+        dynwidth = $(window).width() + -25,
+        dynheight = $(window).height() + -25;
 
     evt.preventDefault();
     $this.fadeIn(2000);
@@ -24,10 +24,10 @@ $(document).ready(function(){
       .attr('preload', 'auto')
       .height(dynheight)
       .width(dynwidth)
+      .focus()
       .data('setup', '{"example_operation": true}');
     $video[0].play();
     $('.video-modal').fadeIn("slow");
-
     $(".video-modal, .close").show();
     $('.video-container').append($video);
     $('.reeltext, .reelgif, #footer').hide();
