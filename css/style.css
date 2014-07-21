@@ -10,11 +10,11 @@ html, body
 #wrapper { 
   min-height: 100%; 
   height: auto !important; 
-  margin-top: -90px; 
+  margin-top: -40px; 
 }
 
 #bottom, #push { 
-  height:10px; text-align: center; margin-right: 550px;
+  height:18px; text-align: center; margin-right: 550px;
 }
 
 #footer { 
@@ -193,21 +193,18 @@ input:checked + .reeltext, .reelgif {
 
 .portfolio {
   display: inline-block;
-  height: 300px;
   position: relative;
   width: 0px;
 }
 
 .clients {
   display: inline-block;
-  height: 300px;
   left: 205px;
   position: relative;
   width: 30px;
 }
 .contact {
   display: inline-block;
-  height: 300px;
   left: 360px;
   position: relative;
   width: 30px;
