@@ -1,10 +1,11 @@
+/*all*/
 html, body
 {
   background-color: #000;
   color: #fff;
   height: 100%;
 }
-
+/*index*/
 #main{padding: 300px 0 0 30px;}
 
 #wrapper { 
@@ -220,4 +221,61 @@ input:checked + .reeltext, .reelgif {
   text-decoration:none;
   text-align:center;
   text-shadow:1px 1px 0px #ffffff;
+}
+
+/*external*/
+.goback {
+  margin: 20px 0 0 20px;
+}
+
+.goback:hover .gbtext {
+  opacity: 1;
+}
+
+.gbtext {
+  margin-top: 22px;
+  opacity: 0;
+  position: fixed;
+  transition: opacity 0.3 ease-out;
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3 ease-out;
+  -o-transition: opacity 0.3 ease-out;
+  @include transition-property(left);
+  @include transition-duration(1s);
+  @include transition-timing-function(ease);
+}
+
+/*contact*/
+.youtube {
+  display: inline-block;
+  position: relative;
+  right: 150px;
+  top: 150px;
+}
+
+.twitter {
+  display: inline-block;
+  position: relative;
+  right: 140px;
+  top: 138px;
+}
+.instagram {
+  display: inline-block;
+  position: relative;
+  right: 120px;
+  top: 138px;
+}
+
+.facebook {
+  display: inline-block;
+  position: relative;
+  right: 100px;
+  top: 138px;
+}
+
+.email {
+  display: block;
+  position: relative;
+  right: 125px;
+  top: 160px;
 }

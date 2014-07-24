@@ -46,4 +46,13 @@ $(document).ready(function(){
   });
   $('.close').hide();
   $('.close').on('click').close('.vid-init');
+  $('.portfolio').on('click', function (evt) {
+    $(this).find('img').animate({
+        left: '500px'
+    }, 500);
+  }, function () {
+    $(this).find('img').animate({
+        left: '500px'
+    }, 500);
+  });
 });
